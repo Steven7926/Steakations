@@ -1,0 +1,469 @@
+[2024-03-01 17:13:37] [class-ss-archive-creation-job.php:83] Starting a job; no job is presently running
+[2024-03-01 17:13:37] [class-ss-archive-creation-job.php:84] Here's our task list: setup, fetch_urls, generate_404, create_zip_archive, wrapup
+[2024-03-01 17:13:37] [class-ss-archive-creation-job.php:98] Pushing first task to queue: setup
+[2024-03-01 17:13:38] [class-ss-archive-creation-job.php:132] Current task: setup
+[2024-03-01 17:13:38] [class-ss-archive-creation-job.php:149] Performing task: setup
+[2024-03-01 17:13:38] [class-ss-task.php:44] Status message: [setup] Setting up
+[2024-03-01 17:13:38] [class-ss-setup-task.php:33] Creating archive directory: C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217\
+[2024-03-01 17:13:38] [class-ss-setup-task.php:79] Adding origin URL to queue: http://localhost/steakations/
+[2024-03-01 17:13:38] [class-ss-setup-task.php:137] File C:\xampp\htdocs\steakations\wp-content\plugins\simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js exists; adding to queue as: C:/xampp/htdocs/steakations/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-03-01 17:13:38] [class-ss-archive-creation-job.php:171] We've found our next task: fetch_urls
+[2024-03-01 17:13:38] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-03-01 17:13:38] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:55] Total pages: 2; Pages remaining: 2
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/
+[2024-03-01 17:13:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 2
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc239e4e-bXbk2M.tmp
+[2024-03-01 17:13:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/?simply_static_page=1618
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/?simply_static_page=1618
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:103] Filesize: 94329 bytes
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:233] New filename for static page: /index.html
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc239e4e-bXbk2M.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/index.html
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:144] Adding 31 URLs to the queue
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:58] URL: C:/xampp/htdocs/steakations/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-03-01 17:13:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 2
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:83] Not fetching URL because it is not a local URL
+[2024-03-01 17:13:38] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 2 pages/files
+[2024-03-01 17:13:38] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-03-01 17:13:38] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-03-01 17:13:38] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:55] Total pages: 32; Pages remaining: 30
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations
+[2024-03-01 17:13:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:30; Total: 32
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc2e53d8-misQ2i.tmp
+[2024-03-01 17:13:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations?simply_static_page=1620
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations?simply_static_page=1620
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:103] Filesize: 360 bytes
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=iso-8859-1
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:190] redirect_url: http://localhost/steakations/
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:199] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/rankings/
+[2024-03-01 17:13:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:29; Total: 32
+[2024-03-01 17:13:38] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc2e8ed8-7hFqD2.tmp
+[2024-03-01 17:13:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/rankings/?simply_static_page=1621
+[2024-03-01 17:13:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/rankings/?simply_static_page=1621
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:103] Filesize: 52021 bytes
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:233] New filename for static page: /rankings/index.html
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc2e8ed8-7hFqD2.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/rankings/index.html
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:144] Adding 21 URLs to the queue
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/about/
+[2024-03-01 17:13:39] [class-ss-task.php:58] [PAGES STATUS] Remaining:28; Total: 32
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc36ebce-9dF0Up.tmp
+[2024-03-01 17:13:39] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/about/?simply_static_page=1622
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/about/?simply_static_page=1622
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:103] Filesize: 52121 bytes
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:233] New filename for static page: /about/index.html
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc36ebce-9dF0Up.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/about/index.html
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:144] Adding 22 URLs to the queue
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/image3-2.png
+[2024-03-01 17:13:39] [class-ss-task.php:58] [PAGES STATUS] Remaining:27; Total: 32
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc3e7e43-zGaS23.tmp
+[2024-03-01 17:13:39] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/image3-2.png?simply_static_page=1623
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/image3-2.png?simply_static_page=1623
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:103] Filesize: 1691890 bytes
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/png
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/image3-2.png
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc3e7e43-zGaS23.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/image3-2.png
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/image5-1.jpg
+[2024-03-01 17:13:39] [class-ss-task.php:58] [PAGES STATUS] Remaining:26; Total: 32
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc3efdd3-OQxxiC.tmp
+[2024-03-01 17:13:39] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/image5-1.jpg?simply_static_page=1624
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/image5-1.jpg?simply_static_page=1624
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:103] Filesize: 186079 bytes
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/image5-1.jpg
+[2024-03-01 17:13:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc3efdd3-OQxxiC.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/image5-1.jpg
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/image1-1.jpg
+[2024-03-01 17:13:39] [class-ss-task.php:58] [PAGES STATUS] Remaining:25; Total: 32
+[2024-03-01 17:13:39] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc400037-ER2yxI.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/image1-1.jpg?simply_static_page=1625
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/image1-1.jpg?simply_static_page=1625
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 159504 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/image1-1.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc400037-ER2yxI.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/image1-1.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/image2-1.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:24; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc40428c-TF7lqX.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/image2-1.jpg?simply_static_page=1626
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/image2-1.jpg?simply_static_page=1626
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 156649 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/image2-1.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc40428c-TF7lqX.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/image2-1.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/image7-1.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:23; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc4084f6-xUt0bF.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/image7-1.jpg?simply_static_page=1627
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/image7-1.jpg?simply_static_page=1627
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 209565 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/image7-1.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc4084f6-xUt0bF.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/image7-1.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/20210924_203232.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:22; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc40c879-SRLSWK.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/20210924_203232.jpg?simply_static_page=1628
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/20210924_203232.jpg?simply_static_page=1628
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 2127545 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/20210924_203232.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc40c879-SRLSWK.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/20210924_203232.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/image9-1.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:21; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc416ef1-9KjnrT.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/image9-1.jpg?simply_static_page=1629
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/image9-1.jpg?simply_static_page=1629
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 130597 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/image9-1.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc416ef1-9KjnrT.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/image9-1.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/img5.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc41aebb-fA5Noc.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/img5.jpg?simply_static_page=1630
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/img5.jpg?simply_static_page=1630
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 1240798 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/img5.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc41aebb-fA5Noc.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/img5.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/Snapchat-122179806.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc425b9c-S4mdST.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/Snapchat-122179806.jpg?simply_static_page=1631
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/Snapchat-122179806.jpg?simply_static_page=1631
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 2056510 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/Snapchat-122179806.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc425b9c-S4mdST.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/Snapchat-122179806.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/image4-2.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc42fc00-JZGo2y.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/image4-2.jpg?simply_static_page=1632
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/image4-2.jpg?simply_static_page=1632
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 291635 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/image4-2.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc42fc00-JZGo2y.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/image4-2.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/IMG_3759.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc434890-ndbKOG.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/IMG_3759.jpg?simply_static_page=1633
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/IMG_3759.jpg?simply_static_page=1633
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 65618 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/IMG_3759.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc434890-ndbKOG.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/IMG_3759.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/image8-2.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc4384d3-crcvoc.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/image8-2.jpg?simply_static_page=1634
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/image8-2.jpg?simply_static_page=1634
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 236403 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/image8-2.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc4384d3-crcvoc.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/image8-2.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/uploads/2024/02/IMG_3904.jpg
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc43dae3-HvPvyk.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/uploads/2024/02/IMG_3904.jpg?simply_static_page=1635
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/uploads/2024/02/IMG_3904.jpg?simply_static_page=1635
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 51103 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2024/02/IMG_3904.jpg
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc43dae3-HvPvyk.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/uploads/2024/02/IMG_3904.jpg
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/feed/
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc443333-kLEFCI.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/feed/?simply_static_page=1636
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/feed/?simply_static_page=1636
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 1103 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /feed/index.xml
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc443333-kLEFCI.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/feed/index.xml
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 3 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/comments/feed/
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc491d27-Pj1iIu.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/comments/feed/?simply_static_page=1637
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/comments/feed/?simply_static_page=1637
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 767 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /comments/feed/index.xml
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc491d27-Pj1iIu.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/comments/feed/index.xml
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 2 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-includes/blocks/navigation/style.min.css
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc4d4012-VTJgnn.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-includes/blocks/navigation/style.min.css?simply_static_page=1638
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-includes/blocks/navigation/style.min.css?simply_static_page=1638
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 16534 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/blocks/navigation/style.min.css
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc4d4012-VTJgnn.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-includes/blocks/navigation/style.min.css
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/plugins/blocks-animation/build/animation/index.css
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc4db7be-jsmB9F.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/plugins/blocks-animation/build/animation/index.css?simply_static_page=1639
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/plugins/blocks-animation/build/animation/index.css?simply_static_page=1639
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 25954 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/plugins/blocks-animation/build/animation/index.css
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc4db7be-jsmB9F.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/plugins/blocks-animation/build/animation/index.css
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-json/
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost/steakations/wp-json/
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/xmlrpc.php
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost/steakations/xmlrpc.php
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-includes/js/dist/interactivity.min.js
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc4e5301-PnNPRB.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-includes/js/dist/interactivity.min.js?simply_static_page=1642
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-includes/js/dist/interactivity.min.js?simply_static_page=1642
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 32378 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/js/dist/interactivity.min.js
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc4e5301-PnNPRB.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-includes/js/dist/interactivity.min.js
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-includes/blocks/navigation/view.min.js
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc4e8781-8EgQAe.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-includes/blocks/navigation/view.min.js?simply_static_page=1643
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-includes/blocks/navigation/view.min.js?simply_static_page=1643
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 3586 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/blocks/navigation/view.min.js
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc4e8781-8EgQAe.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-includes/blocks/navigation/view.min.js
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/plugins/blocks-animation/build/animation/anim-typing.js
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc4ebb84-UnyTKr.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/plugins/blocks-animation/build/animation/anim-typing.js?simply_static_page=1644
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/plugins/blocks-animation/build/animation/anim-typing.js?simply_static_page=1644
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 2123 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/plugins/blocks-animation/build/animation/anim-typing.js
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc4ebb84-UnyTKr.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/plugins/blocks-animation/build/animation/anim-typing.js
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/plugins/blocks-animation/build/animation/frontend.js
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc4ef0e0-0ryWsi.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/plugins/blocks-animation/build/animation/frontend.js?simply_static_page=1645
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/plugins/blocks-animation/build/animation/frontend.js?simply_static_page=1645
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:103] Filesize: 4934 bytes
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/plugins/blocks-animation/build/animation/frontend.js
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc4ef0e0-0ryWsi.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/plugins/blocks-animation/build/animation/frontend.js
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2
+[2024-03-01 17:13:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 32
+[2024-03-01 17:13:40] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc4f268b-1rsJTm.tmp
+[2024-03-01 17:13:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2?simply_static_page=1646
+[2024-03-01 17:13:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2?simply_static_page=1646
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:103] Filesize: 326628 bytes
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc4f268b-1rsJTm.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2
+[2024-03-01 17:13:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 32
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc503116-HP5hkp.tmp
+[2024-03-01 17:13:41] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2?simply_static_page=1647
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2?simply_static_page=1647
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:103] Filesize: 146060 bytes
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc503116-HP5hkp.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2
+[2024-03-01 17:13:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 32
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc5070df-kYPCY9.tmp
+[2024-03-01 17:13:41] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2?simply_static_page=1648
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2?simply_static_page=1648
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:103] Filesize: 105184 bytes
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc5070df-kYPCY9.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2
+[2024-03-01 17:13:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 32
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc50af1a-KqdOmk.tmp
+[2024-03-01 17:13:41] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2?simply_static_page=1649
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2?simply_static_page=1649
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:103] Filesize: 132564 bytes
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc50af1a-KqdOmk.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:41] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 2 of 32 pages/files
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:55] Total pages: 36; Pages remaining: 4
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-json/wp/v2/pages/36
+[2024-03-01 17:13:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 36
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost/steakations/wp-json/wp/v2/pages/36
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-json/oembed/1.0/embed
+[2024-03-01 17:13:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 36
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost/steakations/wp-json/oembed/1.0/embed
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/about/feed/
+[2024-03-01 17:13:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 36
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc512099-UL0ehh.tmp
+[2024-03-01 17:13:41] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/about/feed/?simply_static_page=1652
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/about/feed/?simply_static_page=1652
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:103] Filesize: 739 bytes
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:233] New filename for static page: /about/feed/index.xml
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc512099-UL0ehh.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217/about/feed/index.xml
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:144] Adding 2 URLs to the queue
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:58] URL: http://localhost/steakations/wp-json/wp/v2/pages/2
+[2024-03-01 17:13:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 36
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost/steakations/wp-json/wp/v2/pages/2
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-03-01 17:13:41] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 32 of 36 pages/files
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-03-01 17:13:41] [class-ss-fetch-urls-task.php:55] Total pages: 36; Pages remaining: 0
+[2024-03-01 17:13:41] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 36 of 36 pages/files
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:171] We've found our next task: generate_404
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:132] Current task: generate_404
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:149] Performing task: generate_404
+[2024-03-01 17:13:41] [class-ss-task.php:44] Status message: [generate_404] Generating 404 Page.
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\steve\AppData\Local\Temp/65e20cc560dc7-4hEG2e.tmp
+[2024-03-01 17:13:41] [class-ss-page-handler.php:38] URL Prepared:http://localhost/steakations/1709313222?simply_static_page=0
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/steakations/1709313222?simply_static_page=0
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:103] Filesize: 46864 bytes
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:233] New filename for static page: 404/index.html
+[2024-03-01 17:13:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\steve\AppData\Local\Temp/65e20cc560dc7-4hEG2e.tmp to C:\xampp\htdocs\steakations/wp-content/uploads\simply-static\temp-files/simply-static-1-1709313217\404/index.html
+[2024-03-01 17:13:41] [class-ss-generate-404-task.php:105] Replacing URLs in the static file
+[2024-03-01 17:13:41] [class-ss-generate-404-task.php:111] We're saving this URL; keeping the static file
+[2024-03-01 17:13:41] [class-ss-task.php:44] Status message: [generate_404] 404 Page generated
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:171] We've found our next task: create_zip_archive
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:132] Current task: create_zip_archive
+[2024-03-01 17:13:41] [class-ss-archive-creation-job.php:149] Performing task: create_zip_archive
+[2024-03-01 17:13:41] [class-ss-create-zip-archive.php:71] Fetching list of files to include in zip
+[2024-03-01 17:13:41] [class-ss-create-zip-archive.php:80] Creating zip archive
+[2024-03-01 17:13:42] [class-ss-task.php:44] Status message: [create_zip_archive] ZIP archive created:  <a href="http://localhost/steakations/wp-content/uploads/simply-static/temp-files/simply-static-1-1709313217.zip">Click here to download</a>
+[2024-03-01 17:13:42] [class-ss-archive-creation-job.php:171] We've found our next task: wrapup
+[2024-03-01 17:13:42] [class-ss-archive-creation-job.php:132] Current task: wrapup
+[2024-03-01 17:13:42] [class-ss-archive-creation-job.php:149] Performing task: wrapup
+[2024-03-01 17:13:42] [class-ss-wrapup-task.php:22] Deleting temporary files
+[2024-03-01 17:13:42] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2024-03-01 17:13:42] [class-ss-archive-creation-job.php:166] This task is done and there are no more tasks, time to complete the job
+[2024-03-01 17:13:42] [class-ss-archive-creation-job.php:193] Completing the job
+[2024-03-01 17:13:42] [class-ss-archive-creation-job.php:320] Status message: [done] Done! Finished in 00:00:05
