@@ -9,6 +9,7 @@
   - Build a python script that generates the static files using Simply Static and puts them in a ./build folder
   - Implement a python script that uses AWS keys to connect to the S3 bucket and deploy the static files from the /build folder to the bucket
   - Create a python script that both generates the static files AND deploys them to the S3 bucket
+  - Create an automated system for uploading db changes (right now I manually put the wordpress db in through phpmyadmin for the site)
 
 ## Blocker: Simply Static does not seem to like being containerized.
   - Some research suggests that I need to convince it to use the IP address of the docker container
@@ -21,9 +22,15 @@
 ## To Run Site Locally:
   1. Git Clone Repo
   2. docker-compose up -d from root directory
-  3. Access localhost:8085
-  4. Install wordpress
-  5. Access phpmyadmin
-  6. Drop database tables except for:
-  7. Import to the steakations database using the .zip here.
-  8. Ensure the wp-content folder has the images necessary.
+  3. Access http://localhost:8085/
+  4. Follow wordpress installation
+  5. Access phpmyadmin at http://localhost:8081/
+  6. Sign in with root user
+  7. Drop all steakations database tables except for:
+     - wp_commentmeta
+     - wp-comments
+     - wp-links
+     - wp_usermeta
+     - wp_users  
+  8. Import to the steakations backup using the .zip in the root directory.
+  9. Ensure the wp-content folder has the images necessary for the site.
