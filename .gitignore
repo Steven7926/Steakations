@@ -1,9 +1,1 @@
 .env
-
-/wordpress/wp-admin
-/wordpress/wp-includes
-/wordpress/.htaccess
-/wordpress/license.txt
-/wordpress/readme.html
-/wordpress/wp-activate.php
-/wordpress/*.php
