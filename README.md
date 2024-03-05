@@ -1,7 +1,7 @@
 # Steakations
 ### This is a small wordpress blog site outlining steakhouse reviews by me and my Fiance. I made this website to learn Wordpress and small, cheap, website hosting
-    - The entire site is hosted on an private S3 bucket and served through a Cloudfront distrubution as a static website, making the cost pennies a month.
-    - The static files are generated through the Simply Static Wordpress plugin
+- The entire site is hosted on an private S3 bucket and served through a Cloudfront distrubution as a static website, making the cost pennies a month.
+- The static files are generated through the Simply Static Wordpress plugin
 
 ## I have plans to do the following in the future:
   - Dockerize the site, I'm attempting to that currently which encomposes the docker compose
