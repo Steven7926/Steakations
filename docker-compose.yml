@@ -36,8 +36,6 @@ services:
       - db
     image: wordpress:latest
     restart: unless-stopped
-    extra_hosts:
-      - localhost:172.19.0.1
     ports:
       - 8085:80
     env_file: .env
