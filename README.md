@@ -23,6 +23,7 @@
   1. Git Clone Repo
   2. docker-compose up -d from root directory
   3. Access http://localhost:8085/
+      - Site dashboard is at http://localhost:8085/wp-admin/
   4. Follow wordpress installation
   5. Access phpmyadmin at http://localhost:8081/
   6. Sign in with root user
