@@ -1,10 +1,9 @@
 # Steakations
-## This is a small wordpress blog site outlining steakhouse reviews by me and my Fiance.
-## I made this website to learn Wordpress and small, cheap, website hosting
-## The entire site is hosted on an private S3 bucket and served through a Cloudfront distrubution as a static website, making the cost pennies a month.
-## The static files are generated through the Simply Static Wordpress plugin
+### This is a small wordpress blog site outlining steakhouse reviews by me and my Fiance. I made this website to learn Wordpress and small, cheap, website hosting
+    - The entire site is hosted on an private S3 bucket and served through a Cloudfront distrubution as a static website, making the cost pennies a month.
+    - The static files are generated through the Simply Static Wordpress plugin
 
-## I have plans to do the following in the future
+## I have plans to do the following in the future:
   - Dockerize the site, I'm attempting to that currently which encomposes the docker compose
       - Currently the dockerization works but simply static fails to generate the files when containerized
   - Build a python script that generates the static files using Simply Static and puts them in a ./build folder
@@ -19,7 +18,7 @@
   - I can even get it to successfully make requests to itself as outlined in 1 above, but it still won't generate the files
    
 
-# To Run Site Locally:
+## To Run Site Locally:
   1. Git Clone Repo
   2. docker-compose up -d from root directory
   3. Access localhost:8085
