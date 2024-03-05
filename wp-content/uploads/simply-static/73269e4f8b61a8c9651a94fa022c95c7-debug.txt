@@ -1,2 +1,0 @@
-[2024-02-28 14:36:36] [class-ss-archive-creation-job.php:83] Starting a job; no job is presently running
-[2024-02-28 14:36:36] [class-ss-archive-creation-job.php:84] Here's our task list: setup, fetch_urls, create_zip_archive, wrapup
