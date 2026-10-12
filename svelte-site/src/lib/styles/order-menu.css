@@ -1,0 +1,98 @@
+/* The what-we-ordered menu card, with its dotted-leader total. */
+
+.menu {
+	padding: clamp(1.5rem, 3.5vw, 2.5rem);
+	border: 1px solid var(--char-line);
+	border-radius: var(--radius);
+	background:
+		linear-gradient(180deg, rgb(94 22 32 / 0.14), transparent 55%),
+		var(--night-raised);
+	box-shadow: var(--shadow-plate);
+}
+
+.menu__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding-bottom: 1.25rem;
+	border-bottom: 1px solid var(--char-line);
+}
+
+.menu__list {
+	margin: 0;
+	display: grid;
+}
+
+.menu__row {
+	display: grid;
+	grid-template-columns: minmax(7.5rem, 10rem) 1fr;
+	gap: 0.5rem 1.75rem;
+	padding-block: 1.1rem;
+	border-bottom: 1px solid rgb(42 33 29 / 0.7);
+}
+.menu__row:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+.menu__row dt {
+	font-size: 0.68rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.22em;
+	color: var(--brass);
+	padding-top: 0.3rem;
+}
+
+.menu__row dd {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: 1.02rem;
+	line-height: 1.6;
+	color: var(--cream);
+}
+.menu__row dd p {
+	margin: 0 0 0.6rem;
+}
+.menu__row dd p:last-child {
+	margin-bottom: 0;
+}
+
+/* Classic menu price line: label, dotted leader, figure. */
+.menu__total {
+	display: flex;
+	align-items: baseline;
+	gap: 0.75rem;
+	margin: 1.5rem 0 0;
+	padding-top: 1.25rem;
+	border-top: 1px solid var(--char-line);
+	font-size: 0.68rem;
+	text-transform: uppercase;
+	letter-spacing: 0.22em;
+	color: var(--muted);
+}
+.menu__leader {
+	flex: 1;
+	height: 0;
+	border-bottom: 1px dotted rgb(162 147 127 / 0.45);
+	transform: translateY(-0.2em);
+}
+.menu__total strong {
+	font-family: var(--font-display);
+	font-size: 1.35rem;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	color: var(--brass-light);
+}
+
+@media (max-width: 560px) {
+	.menu__row {
+		grid-template-columns: 1fr;
+		gap: 0.45rem;
+	}
+	.menu__row dt {
+		padding-top: 0;
+	}
+}

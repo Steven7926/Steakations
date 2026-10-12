@@ -1,1 +1,34 @@
+# Secrets — AWS keys, WP admin credentials, DB passwords
 .env
+.env.*
+!.env.example
+
+# Generated static sites. Unanchored so it catches both the wget mirror of
+# the WordPress container at ./build and the SvelteKit output at
+# ./svelte-site/build.
+build/
+
+# Camera masters for svelte-site (HEIC stills, the 47MB HEVC clip). Browsers
+# can't play either format, so only the converted copies under static/ ship.
+# Keeping the originals out of git avoids ~48MB of unservable files in history.
+svelte-site/media-src/
+
+# SvelteKit / Vite (./svelte-site)
+node_modules/
+.svelte-kit/
+.output/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+npm-debug.log*
+yarn-error.log*
+.vscode
+
+# Python tooling for deploy.py
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

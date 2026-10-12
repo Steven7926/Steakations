@@ -1,0 +1,259 @@
+/* Slopegraph comparing Steven's and Lauren's orders.
+   Palette is a diverging pair + neutral midpoint, validated against the
+   #130f0e card surface (OKLCH dark band, chroma floor, CVD separation,
+   WCAG contrast): brass #b5901f vs rose #c25a86 sit at deutan ΔE 14.3,
+   well clear of the ΔE 8 target. Ties take the neutral, as a diverging
+   midpoint should. */
+
+.slope {
+	--slope-up: #b5901f; /* Lauren rates it higher */
+	--slope-down: #c25a86; /* Steven rates it higher */
+	--slope-even: #7d7262; /* dead heat — neutral midpoint */
+
+	padding: clamp(1.5rem, 3.5vw, 2.5rem);
+	border: 1px solid var(--char-line);
+	border-radius: var(--radius);
+	background:
+		linear-gradient(180deg, rgb(94 22 32 / 0.1), transparent 45%),
+		var(--night-raised);
+	box-shadow: var(--shadow-plate);
+}
+
+.slope__head {
+	display: grid;
+	gap: 0.9rem;
+	margin-bottom: 1.75rem;
+}
+
+.slope__title {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: clamp(1.3rem, 1.1rem + 0.9vw, 1.75rem);
+	line-height: 1.15;
+	color: var(--cream);
+}
+
+.slope__summary {
+	max-width: 56ch;
+	margin: 0;
+	font-size: 0.92rem;
+	line-height: 1.6;
+	color: var(--muted);
+}
+
+/* --- Stat row ------------------------------------------------------------ */
+
+.slope__stats {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: clamp(0.75rem, 2.5vw, 1.75rem);
+	margin: 0 0 1.75rem;
+	padding: 0;
+	list-style: none;
+}
+
+.slope__stats li {
+	display: grid;
+	gap: 0.45rem;
+	padding-left: clamp(0.7rem, 2vw, 1.1rem);
+	border-left: 1px solid var(--char-line);
+}
+
+.slope__figure {
+	font-family: var(--font-display);
+	font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem);
+	line-height: 0.95;
+	color: var(--brass-light);
+}
+
+.slope__label {
+	font-size: clamp(0.54rem, 0.5rem + 0.18vw, 0.62rem);
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	line-height: 1.3;
+	color: var(--muted);
+}
+
+/* --- Legend -------------------------------------------------------------- */
+
+.slope__legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem 1.5rem;
+	margin: 0 0 1.5rem;
+	padding: 0;
+	list-style: none;
+}
+
+.slope__legend li {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.64rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	color: var(--muted);
+}
+
+.slope__swatch {
+	width: 0.85rem;
+	height: 0.25rem;
+	border-radius: 2px;
+	background: var(--swatch, var(--slope-even));
+}
+
+/* --- The chart ----------------------------------------------------------- */
+
+.slope__chart {
+	display: none;
+	width: 100%;
+	height: auto;
+	overflow: visible;
+}
+
+.slope__col-head {
+	font-family: var(--font-body);
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.22em;
+	text-transform: uppercase;
+	fill: var(--brass);
+}
+
+.slope__name {
+	font-family: var(--font-display);
+	font-size: 13.5px;
+	fill: var(--parchment);
+}
+
+.slope__rank {
+	font-family: var(--font-display);
+	font-size: 10.5px;
+	fill: var(--cream);
+}
+
+.slope__line {
+	fill: none;
+	stroke-width: 2;
+	stroke-linecap: round;
+}
+
+.slope__node {
+	fill: var(--night-raised);
+	stroke-width: 1.5;
+}
+
+.slope__row {
+	transition: opacity 0.25s var(--ease);
+}
+
+/* Lift the hovered line out of the crossings. */
+.slope__chart:hover .slope__row {
+	opacity: 0.22;
+}
+.slope__chart .slope__row:hover {
+	opacity: 1;
+}
+
+.slope__row--up .slope__line,
+.slope__row--up .slope__node {
+	stroke: var(--slope-up);
+}
+.slope__row--down .slope__line,
+.slope__row--down .slope__node {
+	stroke: var(--slope-down);
+}
+.slope__row--even .slope__line,
+.slope__row--even .slope__node {
+	stroke: var(--slope-even);
+}
+
+/* --- Narrow-screen list (also the accessible equivalent) ----------------- */
+
+.slope__list {
+	display: grid;
+	gap: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Stacked by default: the two pills plus their labels do not fit beside a
+   wrapped steakhouse name at phone widths. */
+.slope__item {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	gap: 0.5rem 1rem;
+	padding-block: 0.85rem;
+	border-bottom: 1px solid rgb(42 33 29 / 0.8);
+}
+
+@media (min-width: 480px) {
+	.slope__item {
+		grid-template-columns: 1fr auto;
+	}
+}
+.slope__item:last-child {
+	border-bottom: 0;
+}
+
+.slope__item-name {
+	font-family: var(--font-display);
+	font-size: 1.02rem;
+	line-height: 1.25;
+	color: var(--cream);
+}
+
+.slope__item-move {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+	font-size: 0.6rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--muted);
+}
+
+.slope__pill {
+	display: inline-grid;
+	place-items: center;
+	min-width: 1.75rem;
+	padding: 0.2rem 0.4rem;
+	border: 1px solid currentColor;
+	border-radius: 100px;
+	font-family: var(--font-display);
+	font-size: 0.8rem;
+	letter-spacing: 0;
+}
+
+.slope__item--up .slope__pill {
+	color: var(--slope-up);
+}
+.slope__item--down .slope__pill {
+	color: var(--slope-down);
+}
+.slope__item--even .slope__pill {
+	color: var(--slope-even);
+}
+
+/* The chart needs room for two label columns before it is worth drawing. */
+@media (min-width: 720px) {
+	.slope__chart {
+		display: block;
+	}
+	.slope__list {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		padding: 0;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
+}

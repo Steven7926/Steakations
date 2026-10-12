@@ -1,0 +1,111 @@
+x-wordpress-db-env: &wordpress-db-env
+  WORDPRESS_DB_HOST: db:3306
+  WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+  WORDPRESS_DB_USER: ${MYSQL_USER}
+  WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+
+services:
+  db:
+    image: mariadb:10.11
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MYSQL_DATABASE}
+      MARIADB_USER: ${MYSQL_USER}
+      MARIADB_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks: [wordpress-network]
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u${MYSQL_USER} -p${MYSQL_PASSWORD} --silent"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      PMA_HOST: db
+      PMA_USER: ${MYSQL_USER}
+      PMA_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "8081:80"
+    networks: [wordpress-network]
+
+  wordpress:
+    image: wordpress:latest
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      <<: *wordpress-db-env
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME', getenv('WP_HOME'));
+        define('WP_SITEURL', getenv('WP_SITEURL'));
+        define('WP_MEMORY_LIMIT', '256M');
+        @ini_set('upload_max_filesize', '64M');
+        @ini_set('post_max_size', '64M');
+        @ini_set('max_execution_time', '120');
+        @ini_set('max_input_time', '120');
+    ports:
+      - "8085:80"
+    volumes:
+      - wp_core:/var/www/html
+      - wp_content:/var/www/html/wp-content
+    networks: [wordpress-network]
+
+  wpcli:
+      image: wordpress:cli
+      depends_on:
+        wordpress:
+          condition: service_started
+      env_file: .env
+      environment:
+        <<: *wordpress-db-env
+      entrypoint: ["bash", "-lc"]
+      working_dir: /var/www/html
+      volumes:
+        - wp_core:/var/www/html
+        - wp_content:/var/www/html/wp-content
+      networks: [wordpress-network]
+
+  # One-shot bootstrap job: runs everything the README's manual setup steps
+  # describe (WP install, content backup restore, permalinks, images,
+  # plugins). Idempotent — safe to leave running on every `docker compose up`.
+  init:
+    image: wordpress:cli
+    user: root
+    depends_on:
+      db:
+        condition: service_healthy
+      wordpress:
+        condition: service_started
+    env_file: .env
+    environment:
+      <<: *wordpress-db-env
+    entrypoint: ["bash", "/bootstrap.sh"]
+    working_dir: /var/www/html
+    volumes:
+      - wp_core:/var/www/html
+      - wp_content:/var/www/html/wp-content
+      - ./bootstrap.sh:/bootstrap.sh:ro
+      - ./steakations_backup.zip:/backup.zip:ro
+      - ./images:/images:ro
+    networks: [wordpress-network]
+
+volumes:
+  db_data:
+  wp_core:
+  wp_content:
+
+networks:
+  wordpress-network:
+    driver: bridge

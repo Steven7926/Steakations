@@ -1,0 +1,139 @@
+/* Rankings: heading, comparison, and the two boards. */
+
+.page-rankings .head {
+	padding-block: clamp(3rem, 8vw, 6rem) clamp(2rem, 5vw, 3.5rem);
+	display: grid;
+	gap: 1.1rem;
+	justify-items: center;
+	text-align: center;
+}
+.page-rankings .head h1 {
+	margin-top: 0.4rem;
+}
+.page-rankings .head__lede {
+	max-width: 44ch;
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.3rem);
+	color: var(--parchment);
+}
+.page-rankings .head__split {
+	max-width: 52ch;
+	margin: 0.5rem 0 0;
+	font-size: 0.95rem;
+	color: var(--muted);
+}
+.page-rankings .head__split strong {
+	font-weight: 400;
+	color: var(--brass-light);
+}
+
+.page-rankings .head__pending {
+	max-width: 52ch;
+	margin: 0;
+	font-family: var(--font-display);
+	font-style: italic;
+	font-size: 0.95rem;
+	color: var(--muted-dim);
+}
+
+.page-rankings .boards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+	gap: clamp(1.75rem, 4vw, 3rem);
+}
+
+.page-rankings .board {
+	padding: clamp(1.5rem, 3.5vw, 2.5rem);
+	border: 1px solid var(--char-line);
+	border-radius: var(--radius);
+	background:
+		linear-gradient(180deg, rgb(94 22 32 / 0.12), transparent 40%),
+		var(--night-raised);
+	box-shadow: var(--shadow-plate);
+}
+
+.page-rankings .board__head {
+	display: grid;
+	gap: 1.1rem;
+	margin-bottom: 0.75rem;
+}
+.page-rankings .board__head h2 {
+	font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+}
+
+.page-rankings .board__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	counter-reset: rank;
+}
+
+.page-rankings .board__list li {
+	border-bottom: 1px solid rgb(42 33 29 / 0.8);
+}
+.page-rankings .board__list li:last-child {
+	border-bottom: 0;
+}
+
+.page-rankings .board__list a {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 1.1rem;
+	padding-block: 1.05rem;
+	text-decoration: none;
+	color: inherit;
+	transition: transform 0.3s var(--ease);
+}
+.page-rankings .board__list a:hover {
+	transform: translateX(5px);
+}
+
+.page-rankings .rank {
+	display: grid;
+	place-items: center;
+	width: 2.4rem;
+	height: 2.4rem;
+	flex: none;
+	border: 1px solid rgb(201 162 39 / 0.3);
+	border-radius: 50%;
+	font-family: var(--font-display);
+	font-size: 0.92rem;
+	color: var(--muted);
+	transition: border-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+.page-rankings .board__list a:hover .rank {
+	border-color: var(--brass);
+	color: var(--brass-light);
+}
+
+/* The number one spot gets the brass treatment. */
+.page-rankings .is-first .rank {
+	border-color: var(--brass);
+	color: var(--night);
+	background: linear-gradient(145deg, var(--brass-light), var(--brass-deep));
+	box-shadow: 0 0 18px rgb(201 162 39 / 0.35);
+}
+
+.page-rankings .entry {
+	display: grid;
+	gap: 0.25rem;
+}
+.page-rankings .entry__name {
+	font-family: var(--font-display);
+	font-size: clamp(1.05rem, 1rem + 0.35vw, 1.25rem);
+	line-height: 1.25;
+	color: var(--cream);
+	transition: color 0.3s var(--ease);
+}
+.page-rankings .board__list a:hover .entry__name {
+	color: var(--brass-light);
+}
+.page-rankings .entry__place {
+	font-size: 0.62rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: var(--muted-dim);
+}

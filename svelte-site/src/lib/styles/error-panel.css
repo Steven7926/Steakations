@@ -1,0 +1,46 @@
+.panel {
+	display: grid;
+	justify-items: center;
+	gap: 1.4rem;
+	padding-block: clamp(5rem, 16vw, 10rem);
+	text-align: center;
+}
+
+.panel h1 {
+	max-width: 16ch;
+	font-size: clamp(2.2rem, 1.5rem + 3.4vw, 4rem);
+}
+
+.panel__message {
+	max-width: 44ch;
+	margin: 0;
+	font-family: var(--font-display);
+	font-style: italic;
+	font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.3rem);
+	color: var(--muted);
+}
+
+.panel .ornament {
+	width: min(100%, 300px);
+}
+
+.panel__actions {
+	margin: 0;
+}
+.panel__actions a {
+	display: inline-block;
+	padding: 1rem 2.25rem;
+	border: 1px solid rgb(201 162 39 / 0.45);
+	border-radius: var(--radius);
+	font-size: 0.68rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.26em;
+	text-decoration: none;
+	color: var(--brass-light);
+	transition: background-color 0.35s var(--ease), color 0.35s var(--ease);
+}
+.panel__actions a:hover {
+	background: rgb(201 162 39 / 0.12);
+	color: var(--cream);
+}

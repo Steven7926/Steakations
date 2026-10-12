@@ -1,0 +1,22 @@
+
+.plate {
+	margin-inline: auto;
+	width: 100%;
+}
+
+.plate--landscape {
+	max-width: 52rem;
+}
+.plate--square {
+	max-width: 34rem;
+}
+.plate--tall {
+	max-width: 26rem;
+}
+
+.plate__frame img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: var(--ratio, auto);
+	object-fit: cover;
+}

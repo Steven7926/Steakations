@@ -1,0 +1,141 @@
+
+.page-about .head {
+	padding-block: clamp(3rem, 8vw, 6rem) clamp(2rem, 5vw, 3.5rem);
+	display: grid;
+	gap: 1.1rem;
+	justify-items: center;
+	text-align: center;
+}
+
+.page-about .layout {
+	display: grid;
+	gap: clamp(2.5rem, 6vw, 4.5rem);
+	align-items: start;
+}
+
+.page-about .story {
+	font-size: clamp(1.02rem, 0.98rem + 0.3vw, 1.15rem);
+	line-height: 1.85;
+}
+.page-about .story__lede {
+	font-family: var(--font-display);
+	font-size: 1.3em;
+	line-height: 1.5;
+	color: var(--cream);
+}
+
+.page-about .doneness-note {
+	display: grid;
+	gap: 0.9rem;
+	justify-items: start;
+	margin-block: 2.25rem;
+	padding: 1.5rem 1.75rem;
+	border-left: 2px solid var(--brass);
+	background: linear-gradient(90deg, rgb(94 22 32 / 0.18), transparent);
+}
+.page-about .doneness-note p {
+	margin: 0;
+	font-family: var(--font-display);
+	font-style: italic;
+	font-size: 1.1rem;
+	color: var(--cream);
+}
+
+.page-about .source {
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--char-line);
+	font-size: 0.9rem;
+	color: var(--muted);
+}
+
+.page-about .feature {
+	margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.page-about .scoreboard {
+	position: sticky;
+	top: 6rem;
+	display: grid;
+	gap: 0.75rem;
+	padding: clamp(1.5rem, 3vw, 2rem);
+	border: 1px solid var(--char-line);
+	border-radius: var(--radius);
+	background:
+		linear-gradient(180deg, rgb(94 22 32 / 0.14), transparent 55%),
+		var(--night-raised);
+	box-shadow: var(--shadow-plate);
+	text-align: center;
+	justify-items: center;
+}
+
+.page-about .scoreboard__note {
+	margin: 0.4rem 0 0;
+	padding-top: 1rem;
+	border-top: 1px solid var(--char-line);
+	font-family: var(--font-display);
+	font-style: italic;
+	font-size: 0.92rem;
+	line-height: 1.5;
+	color: var(--muted);
+}
+.page-about .scoreboard__figure {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: clamp(2.75rem, 2rem + 2.5vw, 3.75rem);
+	line-height: 1;
+	color: var(--brass-light);
+}
+.page-about .scoreboard__figure span {
+	font-size: 0.45em;
+	color: var(--muted-dim);
+}
+.page-about .scoreboard__label {
+	margin: 0;
+	font-size: 0.62rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.24em;
+	color: var(--muted);
+}
+
+@media (min-width: 900px) {
+
+	.page-about .layout {
+		grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.85fr);
+	}
+
+}
+
+.page-about .quote {
+	margin: var(--section-gap) auto 0;
+	padding-block: clamp(2.5rem, 6vw, 4rem);
+	border-block: 1px solid var(--char-line);
+	text-align: center;
+}
+
+.page-about .quote blockquote {
+	margin: 0;
+	display: grid;
+	gap: 1rem;
+}
+.page-about .quote blockquote p {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: clamp(1.3rem, 1rem + 1.8vw, 2.4rem);
+	line-height: 1.3;
+	color: var(--muted);
+}
+.page-about .quote blockquote p.is-answer {
+	font-style: italic;
+	color: var(--cream);
+}
+
+.page-about .quote figcaption {
+	margin-top: 1.75rem;
+	font-size: 0.64rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.26em;
+	color: var(--brass);
+}
