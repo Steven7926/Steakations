@@ -2,12 +2,6 @@
 	import '#lib/styles/order-menu.css';
 
 	let { sections = [], cost = null } = $props();
-
-	// The reviews were written to a consistent convention: "Dish – notes about
-	// it". Splitting on that gives a proper menu line, dish above and
-	// description below. Entries without a dash are either a plain dish name
-	// or, when they run long, a whole sentence written as an aside — those
-	// read better set as the description, with no dish name above them.
 	const NAME_MAX = 58;
 
 	function parse(text) {
@@ -21,8 +15,6 @@
 	<header class="menu__head">
 		<p class="menu__flourish" aria-hidden="true">&#9670;&nbsp;&#9670;&nbsp;&#9670;</p>
 		<p class="eyebrow menu__label">The Menu</p>
-		<h2 class="menu__title">What We Ordered</h2>
-		<span class="doneness">Medium Rare</span>
 	</header>
 
 	<div class="menu__courses">
