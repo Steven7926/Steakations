@@ -31,7 +31,9 @@
 	const r = 12.5;
 	const gap = r + 4;
 
+	/** @param {number} rank */
 	const y = (rank) => topPad + (rank - 0.5) * rowH;
+	/** @param {number} n */
 	const pad2 = (n) => String(n).padStart(2, '0');
 
 	const summary = `${left.diner} and ${right.diner} agree outright on ${agreed} of ${rows.length}${

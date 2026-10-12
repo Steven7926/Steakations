@@ -2,9 +2,16 @@
 	import { PLACEHOLDER } from '#lib/data/reviews.js';
 	import '#lib/styles/review-card.css';
 
+	/**
+	 * @type {{
+	 *   review: import('#lib/data/reviews.js').Review,
+	 *   index?: number,
+	 *   loading?: 'eager' | 'lazy'
+	 * }}
+	 */
 	let { review, index = 0, loading = 'lazy' } = $props();
 
-	const number = String(index + 1).padStart(2, '0');
+	const number = $derived(String(index + 1).padStart(2, '0'));
 	const hasArt = $derived(review.hero !== PLACEHOLDER);
 </script>
 

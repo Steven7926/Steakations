@@ -9,6 +9,7 @@
 	const cities = new Set(reviews.map((r) => `${r.city}, ${r.state}`)).size;
 	const pct = Math.round((visited / site.listTotal) * 100);
 
+	/** @param {number} n */
 	const pad = (n) => String(n).padStart(2, '0');
 </script>
 

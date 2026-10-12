@@ -1,14 +1,8 @@
-/* Slopegraph comparing Steven's and Lauren's orders.
-   Palette is a diverging pair + neutral midpoint, validated against the
-   #130f0e card surface (OKLCH dark band, chroma floor, CVD separation,
-   WCAG contrast): brass #b5901f vs rose #c25a86 sit at deutan ΔE 14.3,
-   well clear of the ΔE 8 target. Ties take the neutral, as a diverging
-   midpoint should. */
 
 .slope {
 	--slope-up: #b5901f; /* Lauren rates it higher */
 	--slope-down: #c25a86; /* Steven rates it higher */
-	--slope-even: #7d7262; /* dead heat — neutral midpoint */
+	--slope-even: #7d7262; /* neutral midpoint */
 
 	padding: clamp(1.5rem, 3.5vw, 2.5rem);
 	border: 1px solid var(--char-line);
@@ -40,8 +34,6 @@
 	line-height: 1.6;
 	color: var(--muted);
 }
-
-/* --- Stat row ------------------------------------------------------------ */
 
 .slope__stats {
 	display: grid;
@@ -75,8 +67,6 @@
 	color: var(--muted);
 }
 
-/* --- Legend -------------------------------------------------------------- */
-
 .slope__legend {
 	display: flex;
 	flex-wrap: wrap;
@@ -103,8 +93,6 @@
 	border-radius: 2px;
 	background: var(--swatch, var(--slope-even));
 }
-
-/* --- The chart ----------------------------------------------------------- */
 
 .slope__chart {
 	display: none;
@@ -149,7 +137,6 @@
 	transition: opacity 0.25s var(--ease);
 }
 
-/* Lift the hovered line out of the crossings. */
 .slope__chart:hover .slope__row {
 	opacity: 0.22;
 }
@@ -170,8 +157,6 @@
 	stroke: var(--slope-even);
 }
 
-/* --- Narrow-screen list (also the accessible equivalent) ----------------- */
-
 .slope__list {
 	display: grid;
 	gap: 0;
@@ -180,8 +165,6 @@
 	list-style: none;
 }
 
-/* Stacked by default: the two pills plus their labels do not fit beside a
-   wrapped steakhouse name at phone widths. */
 .slope__item {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -241,7 +224,6 @@
 	color: var(--slope-even);
 }
 
-/* The chart needs room for two label columns before it is worth drawing. */
 @media (min-width: 720px) {
 	.slope__chart {
 		display: block;

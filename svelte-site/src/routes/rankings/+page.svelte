@@ -9,14 +9,10 @@
 
 	const lists = rankings.map(({ diner, order }) => ({
 		diner,
-		places: order.map((slug) => reviewBySlug(slug))
+		places: order.flatMap((slug) => reviewBySlug(slug) ?? [])
 	}));
 
-	// The one thing we flatly disagree on is the top spot, so call it out.
-	const topPicks = rankings.map(({ diner, order }) => ({
-		diner,
-		pick: reviewBySlug(order[0])
-	}));
+	const topPicks = lists.map(({ diner, places }) => ({ diner, pick: places[0] }));
 </script>
 
 <svelte:head>

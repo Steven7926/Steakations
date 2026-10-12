@@ -4,6 +4,7 @@
 	let { sections = [], cost = null } = $props();
 	const NAME_MAX = 58;
 
+	/** @param {string} text */
 	function parse(text) {
 		const m = text.match(/^(.*?)\s[–—]\s(.*)$/s);
 		if (m) return { name: m[1], note: m[2] };

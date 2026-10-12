@@ -108,7 +108,6 @@
 	color: var(--brass-light);
 }
 
-/* The number one spot gets the brass treatment. */
 .page-rankings .is-first .rank {
 	border-color: var(--brass);
 	color: var(--night);

@@ -1,5 +1,6 @@
 <script>
 	import '#lib/styles/plate.css';
+	/** @type {{ src: string, caption?: string, w?: number, h?: number, loading?: 'eager' | 'lazy' }} */
 	let { src, caption = '', w, h, loading = 'lazy' } = $props();
 
 	const ratio = $derived(w && h ? w / h : null);

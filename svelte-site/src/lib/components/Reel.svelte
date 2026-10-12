@@ -1,7 +1,9 @@
 <script>
 	import '#lib/styles/reel.css';
+	/** @type {{ src: string, poster?: string, caption?: string, w?: number, h?: number }} */
 	let { src, poster, caption = '', w, h } = $props();
 
+	/** @type {HTMLVideoElement | null} */
 	let el = $state(null);
 	let reduced = $state(false);
 

@@ -5,6 +5,7 @@
 
 	let open = $state(false);
 
+	/** @param {string} href */
 	const isCurrent = (href) =>
 		href === '/' ? page.url.pathname === '/' : page.url.pathname.startsWith(href);
 </script>

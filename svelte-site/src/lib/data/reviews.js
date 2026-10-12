@@ -1,5 +1,35 @@
 export const PLACEHOLDER = '/images/placeholder-plate.svg';
 
+/**
+ * A photograph or, when `video` is set, a short clip.
+ * @typedef {object} Plate
+ * @property {string} src
+ * @property {number} w natural pixel width, so layout space is reserved
+ * @property {number} h natural pixel height
+ * @property {string} caption
+ * @property {boolean} [video]
+ * @property {string} [poster] still frame, video only
+ */
+
+/**
+ * @typedef {object} Review
+ * @property {string} slug
+ * @property {string} name
+ * @property {string} city
+ * @property {string} state
+ * @property {number | null} established
+ * @property {number | null} listRank 
+ * @property {string} hero
+ * @property {string | null} tagline
+ * @property {string[]} copy
+ * @property {Plate[]} plates
+ * @property {{ label: string, items: string[] }[]} order
+ * @property {string | null} cost
+ * @property {string[]} thoughts
+ * @property {boolean} [pending] visited, but not yet written up
+ */
+
+/** @type {Review[]} */
 export const reviews = [
 	{
 		slug: 'berns-steakhouse',

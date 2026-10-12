@@ -6,6 +6,7 @@
 	import OrderMenu from '#lib/components/OrderMenu.svelte';
 	import '#lib/styles/page-review.css';
 
+	/** @type {{ data: ReturnType<typeof import('./+page.js').load> }} */
 	let { data } = $props();
 
 	const review = $derived(data.review);
@@ -20,6 +21,7 @@
 	const hasFacts = $derived(Boolean(review.established) || Boolean(review.listRank) || places.length > 0);
 	const hasArt = $derived(review.hero !== PLACEHOLDER);
 
+	/** @param {number} n */
 	const ordinal = (n) => {
 		const suffix = n % 10 === 1 && n !== 11 ? 'st' : n % 10 === 2 && n !== 12 ? 'nd' : n % 10 === 3 && n !== 13 ? 'rd' : 'th';
 		return `${n}${suffix}`;
